@@ -1,10 +1,97 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
   <head>
     <meta charset="utf-8">
+    <meta name ="viewport"content="width=device-width,initial-scale=1">
+
     <title>module- 2 assignment</title>
+    <style>
+      *{
+        box-sizing:border-box;
+      }
+      h1{
+        text-align:center;
+        margin-bottom:60px;
+        color:red;
+      }
+      p{
+        border:1px solid black;
+        background-color:violet;
+        width:90%;
+        height:275px;
+        margin-right:auto;
+        margin-left:auto;
+        font-family:Helvetica;
+        color:black;
+      }
+      .font1{
+        grid-auto-flow:row;
+        background-color:#0000FF;
+      }
+      .font2{
+       grid-auto-flow:row;
+        background-color:red;
+      }
+      .font3{
+      grid-auto-flow:row;
+        background-color:yellow;
+      }
+      .row{
+        width:100%;
+      }
+      @media(min-width:992px) and (max-width:1200px){
+        .col-lg-1,.col-lg-2,.col-lg-3{
+        float:left;
+        border:1px solid green;
+      }
+      .col-lg-1{
+        width:33.33%;
+      }.col-lg-2{
+        width:33.33%;
+      }.col-lg-3{
+        width:33.33%
+      }
+      }
+      @media(min-width:768px) and (max-width:991px){
+        .col-md-1,.col-md-2,.col-md-3{
+          float:left;
+        border:1px solid green;
+        }
+        .col-md-1{
+          width:50%;
+        }.col-md-2{
+          width:50%;
+        }.col-md-3{
+          width:100%
+        }
+      }
+
+    </style>
   </head>
   <body>
-    
+    <h1>Our Menu</h1>
+    <div class="row">
+    <div class="col-lg-1 col-md-1">
+      <p>
+        <font class="font1">Butter Chicken</font>
+        <br>
+      Butter Chicken or Murg Makhani is a dish, originating in the Indian subcontinent, of chicken in a mildly spiced tomato sauce.The chicken is usually cooked in a tandoor (traditional clay oven), but may be grilled, roasted, or pan-fried. It is served in a mild curry sauce that includes butter. The sauce is a tomato- and onion-based sauce that is simmered until smooth and much of the water has evaporated. There are many variations on the composition and spicing of the sauce, which is sieved so that it is finally velvety smooth.</p></div>
+      <div class="col-lg-2 col-md-2">
+      <p>
+        <font class="font2">Shahi Paneer</font>
+        <br>
+        Shahi paneer is a preparation of paneer, native to the Indian subcontinent, consisting of a thick gravy of cream, tomatoes and Indian spices.
+
+Originating with the creamy delicacies of Mughlai cuisine (hence the term "shahi", in reference to the royal title of Shahanshah in Mughal India), this dish is prepared by emulsifying tomatoes, onions, ground cashews, clarified butter and cream into a curry, with the addition of paneer cubes and a variety of spices.
+
+</p></div>
+      <div class="col-lg-3 col-md-3">
+      <p>
+        <font class="font3">Biryani</font>
+        <br>
+        Biryani is a mixed rice dish with its origins among the Muslims of the Indian subcontinent.It can be compared to mixing a curry, later combining it with semi-cooked rice separately. This dish is especially popular throughout the Indian subcontinent, as well as among its diaspora.It is also prepared in other regions such as Iraqi Kurdistan.It is made with Indian spices, rice, meat (chicken, beef, goat, pork, lamb, prawn, or fish), vegetables or eggs.
+      </p></div>
+      </div>
+
   </body>
 </html>
