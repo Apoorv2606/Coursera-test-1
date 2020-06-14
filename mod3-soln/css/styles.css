@@ -1,0 +1,45 @@
+body{
+  font-size: 16px;
+  color: #fff;
+  background-color: maroon;
+  font-family: 'Oxygen', sans-serif;
+
+}
+/*HEADER*/
+#header-nav{
+  background-color: #f6b319;
+  border-radius: 0;
+  border: 0;
+  height: auto;
+}
+#logo-img{
+  background: url('../images/logo1.jpg') no-repeat;
+  width: 120px;
+  height: 80px;
+  margin: 10px 15px 10px 0;
+}
+.navbar-brand{
+  padding-top: 25px;
+}
+
+.navbar-brand h1{
+  font-family: 'Lora', serif;
+  color: #557c3e;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus{
+  text-decoration: none;
+}
+.navbar-brand p span {
+  vertical-align: middle;
+  
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar{
+  border: 1px solid #61122f;
+}
