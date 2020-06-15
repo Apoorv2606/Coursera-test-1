@@ -1,45 +1,140 @@
+*{
+  box-sizing: border-box;
+}
 body{
-  font-size: 16px;
-  color: #fff;
-  background-color: maroon;
+  background-color: #E7E7E7;
+}
+#link-top{
+    color: red;
+    font-size: 20px;
+    text-decoration: none;
+    font-family:sans-serif;
+}
+#link-top:hover{
+  background-color:#E7E7E7;
+  color: black;
+}
+.lis{
+  border-style: solid;
+  border-color: black;
+  background-color: lightgreen;
+  text-align: center;
+}
+.navbar{
+  padding:15px;
+  background-color: rgb(169, 252, 101);
+  padding-left: 25px;
+  border-bottom: 15px;
+}
+.navbar h1{
   font-family: 'Oxygen', sans-serif;
-
-}
-/*HEADER*/
-#header-nav{
-  background-color: #f6b319;
-  border-radius: 0;
-  border: 0;
-  height: auto;
-}
-#logo-img{
-  background: url('../images/logo1.jpg') no-repeat;
-  width: 120px;
-  height: 80px;
-  margin: 10px 15px 10px 0;
-}
-.navbar-brand{
-  padding-top: 25px;
-}
-
-.navbar-brand h1{
-  font-family: 'Lora', serif;
-  color: #557c3e;
-  font-size: 1.5em;
-  text-transform: uppercase;
+  font-size: 2.3em;
   font-weight: bold;
-  text-shadow: 1px 1px 1px #222;
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: .75;
+  display: inline;
 }
-.navbar-brand a:hover, .navbar-brand a:focus{
-  text-decoration: none;
+#nav-list a{
+  font-family: verdana;
+  font-size: 1.2em;
+  text-align: center;
+  color: #954C19;
 }
-.navbar-brand p span {
-  vertical-align: middle;
-  
+#nav-list a:hover{
+  background-color: #E7E7E7;
 }
-.navbar-header button.navbar-toggle, .navbar-header .icon-bar{
-  border: 1px solid #61122f;
+#MENU{
+  font-family:sans-serif;
+  width:100%;
+  padding: 15px;
+}
+.container{
+  width: 100%;
+  padding: 15px;
+}
+.row{
+  width:100%;
+  overflow:hidden;
+}
+.container #content{
+  width:100%;
+  padding:15px;
+  border: 2px solid black;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:10px;
+  margin-bottom:10px;
+  background-color: violet;
+  color: black;
+  font-family: 'Lora', serif;
+}
+.container #content .Food-item{
+  color: black;
+  text-align: center;
+
+}
+.container h3{
+  font-weight: bold;
+}
+/***********************FOR MEDIUM DEVICES**********************/
+@media (min-width:992px){
+
+    .col-md-4{
+      float:left;
+      width:33.33%;
+    }
+
+    .navbar{
+      border-bottom: 5px solid black;
+      height:80px;
+    }
+}
+/***********************FOR SMALL DEVICES**********************/
+@media (min-width:768px) and (max-width:991px){
+
+    .col-sm-6{
+      float:left;
+      width:50%;
+    }
+    .col-sm-12{
+      float:left;
+      width:100%;
+    }
+
+    .navbar{
+      border-bottom: 5px solid black;
+      height:80px;
+    }
+}
+/***********************FOR EXTRA SMALL DEVICES**********************/
+@media (max-width:767px){
+
+    .col-xs-12{
+      float:left;
+      width:100%;
+    }
+
+    .navbar{
+      border-bottom: 3px solid pink;
+    }
+    .navbar-header{
+      border-bottom: 3px solid grey;
+    }
+    .navbar .navbar-toggle{
+      border:2px solid pink;
+      border-radius:10px;
+      background-color: #FC9403;
+    }
+    .navbar .icon-bar{
+      background-color: pink;
+    }
+
+}
+.ak{
+  border-style: solid;
+  border-color: black;
+  background-color: lightgreen;
+}
+.Food-item{
+  border-style: solid;
+  border-color: black;
+  background-color: lightgreen;
 }
